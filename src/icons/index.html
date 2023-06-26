@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="idTag" style="width: 100px; height: 100px;"></div>
+    <div id="idTag2" style="width: 100px; height: 100px;"></div>
+    <div id="idTag3" style="width: 100px; height: 100px;"></div>
+    <div id="idTag4" style="width: 100px; height: 100px;"></div>
+    <div id="idTag5" style="width: 100px; height: 100px;"></div>
+    <div id="idTag6" style="width: 100px; height: 100px;"></div>
+    <script>
+        document.getElementById('idTag').style.backgroundImage = `url('data:image/svg+xml,${encodeURIComponent(getSVG('check', 'aqua'))}')`;
+        document.getElementById('idTag2').style.backgroundImage = `url('data:image/svg+xml,${encodeURIComponent(getSVG('check', 'violet'))}')`;
+        document.getElementById('idTag3').style.backgroundImage = `url('data:image/svg+xml,${encodeURIComponent(getSVG('check', 'yellow'))}')`;
+        document.getElementById('idTag4').style.backgroundImage = `url('data:image/svg+xml,${encodeURIComponent(getSVG('check', 'green'))}')`;
+        document.getElementById('idTag5').style.backgroundImage = `url('data:image/svg+xml,${encodeURIComponent(getSVG('check', 'blue'))}')`;
+        document.getElementById('idTag6').style.backgroundImage = `url('data:image/svg+xml,${encodeURIComponent(getSVG('check2', 'gray'))}')`;
+
+        function getSVG(nameSVG, color) {
+            let svg = {check: `<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.5858 29.7491C25.0897 29.253 24.4167 28.9742 23.715 28.9742C23.0133 28.9742 22.3403 29.253 21.8441 29.7491C21.348 30.2453 21.0692 30.9183 21.0692 31.62C21.0692 32.3217 21.348 32.9947 21.8441 33.4908L29.7491 41.3958C29.9954 41.6401 30.2874 41.8333 30.6084 41.9644C30.9294 42.0955 31.2732 42.162 31.62 42.16C31.9807 42.1486 32.3353 42.0631 32.6616 41.909C32.988 41.7549 33.2792 41.5354 33.5172 41.2641L51.9622 20.1841C52.3881 19.6553 52.5934 18.9826 52.5354 18.3061C52.4774 17.6296 52.1605 17.0016 51.6508 16.5531C51.1411 16.1045 50.478 15.8701 49.7996 15.8985C49.1212 15.927 48.48 16.2162 48.0097 16.7059L31.62 35.6779L25.5858 29.7491Z" fill="${color}"/><path d="M55.335 28.985C54.6362 28.985 53.9659 29.2626 53.4718 29.7568C52.9776 30.2509 52.7 30.9212 52.7 31.62C52.7 37.2108 50.4791 42.5725 46.5258 46.5258C42.5725 50.4791 37.2108 52.7 31.62 52.7C27.4569 52.6981 23.3876 51.4636 19.9252 49.1521C16.4629 46.8406 13.7624 43.5556 12.1644 39.7115C10.5665 35.8673 10.1425 31.6361 10.946 27.5513C11.7496 23.4665 13.7446 19.7111 16.6796 16.7586C18.6313 14.7807 20.9579 13.212 23.5233 12.1442C26.0887 11.0764 28.8413 10.5311 31.62 10.54C33.305 10.5505 34.9837 10.7449 36.6265 11.1197C36.9703 11.226 37.3322 11.2608 37.6899 11.2219C38.0477 11.183 38.3937 11.0713 38.7066 10.8936C39.0195 10.7158 39.2926 10.4759 39.5092 10.1885C39.7259 9.9012 39.8813 9.57253 39.9661 9.2228C40.0508 8.87306 40.063 8.50968 40.0019 8.15506C39.9408 7.80043 39.8077 7.46208 39.6109 7.16085C39.414 6.85962 39.1575 6.60191 38.8573 6.4036C38.557 6.20529 38.2193 6.07059 37.865 6.0078C35.8179 5.52623 33.7229 5.27871 31.62 5.27C26.4141 5.29704 21.3329 6.86554 17.0176 9.77756C12.7023 12.6896 9.34627 16.8146 7.37305 21.6321C5.39982 26.4496 4.89783 31.7436 5.93042 36.8461C6.96302 41.9486 9.48392 46.6309 13.175 50.3021C18.0674 55.1968 24.6996 57.9539 31.62 57.97C38.6085 57.97 45.3107 55.1938 50.2523 50.2523C55.1938 45.3107 57.97 38.6085 57.97 31.62C57.97 30.9212 57.6924 30.2509 57.1982 29.7568C56.7041 29.2626 56.0338 28.985 55.335 28.985Z" fill="${color}"/></svg>`,        
+       }    
+            return svg[nameSVG];
+        }
+    
+        
+    </script>
+
+
+
+    
+</body>
+</html>

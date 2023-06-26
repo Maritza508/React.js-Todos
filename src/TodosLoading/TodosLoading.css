@@ -1,0 +1,48 @@
+.padre{
+    display: flex;
+}
+.loader {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+}
+
+.loader::before {
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(0deg, #f0c 0%, #80f 100%); */
+    background-image: linear-gradient(to right top, #f84aff, #ff26aa, #ff7157, #ffb600, #dceb12);
+}
+
+.loader::after {
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+  /* //https://www.youtube.com/watch?v=-LCv2gen93A */
